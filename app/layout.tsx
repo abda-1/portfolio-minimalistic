@@ -8,17 +8,17 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SandpackCSS } from './blog/[slug]/sandpack';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.io'),
+  metadataBase: new URL('https://abdullahtahir.vercel.app'),
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'Abdullah Tahir',
+    template: '%s | Abdullah Tahir',
   },
-  description: 'Developer, writer, and creator.',
+  description: 'A perpetual student',
   openGraph: {
-    title: 'Lee Robinson',
+    title: 'Abdullah Tahir',
     description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
-    siteName: 'Lee Robinson',
+    url: 'https://abdullahtahir.vercel.app',
+    siteName: 'Abdullah Tahir',
     locale: 'en_US',
     type: 'website',
   },
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  twitter: {
-    title: 'Lee Robinson',
-    card: 'summary_large_image',
-  },
-  verification: {
-    google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    yandex: '14d2e73487fa6c71',
-  },
+  // twitter: {
+  //   title: 'Abdullah Tahir',
+  //   card: 'summary_large_image',
+  // },
+  // verification: {
+  //   google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
+  //   yandex: '14d2e73487fa6c71',
+  // },
 };
 
 const cx = (...classes) => classes.filter(Boolean).join(' ');
