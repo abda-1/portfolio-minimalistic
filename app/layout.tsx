@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: 'A perpetual student',
   openGraph: {
     title: 'Abdullah Tahir',
-    description: 'Developer, writer, and creator.',
+    description: 'Portfolio of an aspring aerospace and software engineer.',
     url: 'https://abdullahtahir.vercel.app',
     siteName: 'Abdullah Tahir',
     locale: 'en_US',
