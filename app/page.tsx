@@ -10,12 +10,12 @@ export default function Page() {
               Abdullah Tahir
             </h1>
             <h2 className="mb-1 text-xl font-bold tracking-tight text-zinc-600 dark:text-white md:text-2xl">
-            portfolio of a perpetual student
+            an aspiring software and aerospace engineer in love with learning.
             </h2>
           </div>
           <div className="relative mb-8 mr-auto w-[100px] sm:mb-0 sm:w-[200px]">
           <Image
-            src='/images/profile.jpg' // Assuming the image is in public/
+            src='/images/memoji.jpg' // Assuming the image is in public/
             alt='avatar'
             width={200}
             height={200}
@@ -24,7 +24,7 @@ export default function Page() {
           </div>
         </div>
         <p className="space-y-4 text-zinc-500 dark:text-slate-300">
-          <p className="my-4 leading-loose">
+          <p className="my-4 leading-loose text-justify">
 
             I'm currently an undergraduate student at {' '}
             <a
@@ -36,11 +36,20 @@ export default function Page() {
               The University of Adelaide
             </a>
             - studying a double degree in Mechanical Engineering (Aerospace) with Computer Science. During my time as
-            a student, always believed in a simply yet powerful philosophy; the best way to grow as an individual is to throw 
-            yourself into new experiences. Whether it be through taking upon new and foreign hobbies, such as bouldering or 
-            competitive programming, or even trying to figure out how a crater detection algorithm works with zero prior ML experience
-            - I wholeheartedly embrace the challenge of pushing past my comfort zone. Each new adventure not only manages to humble
-            me every single time, but also teach me invaluable lessons about perseverance, and the boundless potential of the human spirit!
+            a student, always believed in a simply yet powerful philosophy;&nbsp;
+            
+            <span className="focusable rounded-sm font-medium text-zinc-800 underline decoration-rose-700 decoration-2 underline-offset-2 transition duration-100 focus:text-blue-500 focus:ring-sky-500/40 dark:text-white dark:decoration-amber-400  dark:hover:decoration-amber-400/30 dark:focus:text-sky-400 dark:focus:ring-sky-400/40">
+             the best way to grow as an individual is to throw yourself into new experiences.
+            </span>
+            
+            &nbsp;Whether it be through taking upon new and foreign hobbies, such as bouldering or 
+            competitive programming, or even trying to figure out how a crater detection algorithm works with zero prior machine learning experience
+            - 
+            <span className="focusable rounded-sm font-medium text-zinc-800 underline decoration-rose-700 decoration-2 underline-offset-2 transition duration-100 focus:text-blue-500 focus:ring-sky-500/40 dark:text-white dark:decoration-rose-400  dark:hover:decoration-rose-400/30 dark:focus:text-sky-400 dark:focus:ring-sky-400/40">
+            I wholeheartedly embrace the challenge of pushing past my comfort zone. 
+            </span >
+            &nbsp;Each new adventure not only manages to humble me every single time, but also teach me invaluable lessons about perseverance, 
+            and the boundless potential of the human spirit!
             <br></br><br></br>
           </p>
         </p>
@@ -112,10 +121,10 @@ export default function Page() {
           <div className="mt-2 justify-center"></div>
         </div>
       </div>
-      <div className="content mb-8">
+      <div className="content mb-2">
         <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Projects</h2>
-        <p className="max-w-[46ch] leading-relaxed text-zinc-500 dark:text-slate-300">
-          Here are some of the projects I've worked on in the past.
+        <p className="max-w-[40ch] leading-relaxed text-zinc-500 dark:text-slate-300">
+          Here are some of the projects I've worked on in the past. Click on the photos to see the code!
         </p>
         <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
             <a
@@ -146,8 +155,11 @@ export default function Page() {
               <p className="flex items-center">
                 <span className="flex-1 text-zinc-500 dark:text-zinc-400">
                   Developed a two player chess game using unsigned 64-bit integers to represent the state of the board.
-                  Inspired by the StockFish chess engine from lichess.com- I am planning to extend this project to have
-                  a fully working AI opponent.
+                  Inspired by the StockFish chess engine from&nbsp;
+                  <a href='https://lichess.org/' className="focusable rounded-sm font-medium text-zinc-400 underline decoration-slate-700 decoration-2 underline-offset-2 transition duration-100 focus:text-gray-500 focus:ring-slate-500/40 dark:text-zinc-300  dark:hover:decoration-slate-400/30"> 
+                  lichess.org 
+                  </a>
+                  - I am planning to extend this project to have a fully working AI opponent.
                 </span>
               </p>
             </div>
@@ -239,7 +251,7 @@ export default function Page() {
                   Academic Tutor
                 </span>
                 <span className="ml-1.5 inline-block flex-none translate-y-px rounded bg-zinc-100 p-1 text-xs font-medium leading-none text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
-                  2022
+                  Jan 2022
                   <span className="text-zinc-350 dark:text-zinc-550 mx-0.5">—</span>
                   Today
                 </span>
@@ -267,14 +279,14 @@ export default function Page() {
                   Crater Detection Algorithm Research
                 </span>
                 <span className="ml-1.5 inline-block flex-none translate-y-px rounded bg-zinc-100 p-1 text-xs font-medium leading-none text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
-                  2023
+                  Aug 2023
                   <span className="text-zinc-350 dark:text-zinc-550 mx-0.5">—</span>
-                  2023
+                  Aug 2023
                 </span>
               </p>
               <p className="flex items-center truncate">
                 <span className="flex-1 truncate text-zinc-500 dark:text-zinc-400">
-                  Underwent three weeks of intensive research help explore existing CDAs
+                  Underwent three weeks of intensive research help explore existing CDAs.
                 </span>
               </p>
             </div>
