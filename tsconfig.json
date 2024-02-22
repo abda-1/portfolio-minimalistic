@@ -22,6 +22,6 @@
     ],
     "strictNullChecks": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/auth/[...nextauth]/route.ts.bak", "app/blog/page.tsx.bak", "app/blog/view-counter.tsx.bak", "app/blog/[slug]/page.tsx.bak"],
   "exclude": ["node_modules"]
 }
