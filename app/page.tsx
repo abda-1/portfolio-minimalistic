@@ -1,5 +1,4 @@
 import Image from 'next/image'
-// import Footer from '../app/components/footer'
 
 export default function Page() {
   return (
@@ -107,13 +106,20 @@ export default function Page() {
             rel="noreferrer"
             target="_blank"
           >
-            <svg height="24" role="presentation" width="24" xmlns="http://www.w3.org/2000/svg">
+            {/* <svg height="24" role="presentation" width="24" xmlns="http://www.w3.org/2000/svg">
               <path
                 clipRule="evenodd"
                 d="M21.5 5.894a7.571 7.571 0 0 1-2.239.636 4.024 4.024 0 0 0 1.714-2.235 7.646 7.646 0 0 1-2.475.98A3.83 3.83 0 0 0 15.654 4c-2.516 0-4.366 2.433-3.797 4.959-3.239-.168-6.111-1.776-8.034-4.22-1.021 1.816-.53 4.19 1.206 5.393a3.78 3.78 0 0 1-1.765-.505c-.043 1.87 1.252 3.622 3.126 4.011-.548.155-1.15.19-1.76.07.495 1.604 1.934 2.771 3.641 2.804A7.642 7.642 0 0 1 2.5 18.185 10.757 10.757 0 0 0 8.476 20c7.237 0 11.326-6.334 11.079-12.015a8.101 8.101 0 0 0 1.945-2.09Z"
                 fill="currentColor"
                 fillRule="evenodd"
               />
+            </svg> */}
+            <svg fill="currentColor" height="24" viewBox="-274.15 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_iconCarrier">
+                <path d="M30 161c-16.5 0-30 13.5-30 30v827.8c0 16.5 13.5 30 30 30h591.7c16.5 0 30-13.5 30-30V343.7L469 161H30zm389.6 60v134.8c0 19.9 16.3 36.2 36.2 36.2h135.9v596.8H60V221h359.6z"></path>
+                <path d="M123.8 768.6h394.8v50H123.8zm0-124.6h394.8v50H123.8zm0-124.5h394.8v50H123.8z"></path>
+                <circle cx="194" cy="382.3" r="60"></circle>
+              </g>
             </svg>
             <span className="hidden sm:inline">Resume</span>
           </a>
@@ -122,6 +128,9 @@ export default function Page() {
           <div className="mt-2 justify-center"></div>
         </div>
       </div>
+
+
+      
 
       <div className="content mb-2">
         <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Projects</h2>
