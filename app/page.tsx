@@ -36,7 +36,7 @@ export default function Page() {
               The University of Adelaide
             </a>
             - studying a double degree in Mechanical Engineering (Aerospace) with Computer Science. During my time as
-            a student, always believed in a simply yet powerful philosophy;&nbsp;
+            a student, I have always believed in a simply yet powerful philosophy;&nbsp;
             
             <span className="focusable rounded-sm font-medium text-zinc-800 underline decoration-rose-700 decoration-2 underline-offset-2 transition duration-100 focus:text-blue-500 focus:ring-sky-500/40 dark:text-white dark:decoration-amber-400  dark:hover:decoration-amber-400/30 dark:focus:text-sky-400 dark:focus:ring-sky-400/40">
              the best way to grow as an individual is to throw yourself into new experiences.
@@ -51,6 +51,9 @@ export default function Page() {
             &nbsp;Each new adventure not only manages to humble me every single time, but also teach me invaluable lessons about perseverance, 
             and the boundless potential of the human spirit!
             <br></br><br></br>
+
+            One of the many things I enjoy is taking the time to break down complex problems- and this is where I discovered my passion for coding.
+            Check out some of the projects I have worked on over the years down below!
           </p>
         </p>
         <div className="mt-8 flex flex-wrap gap-4 text-center">
