@@ -170,7 +170,7 @@ export default function Page() {
                 <span className="flex-1 text-zinc-500 dark:text-zinc-400">
                   Developed a two player chess game using unsigned 64-bit integers to represent the state of the board.
                   Inspired by the StockFish chess engine from&nbsp;
-                  <a href='https://lichess.org/' className="focusable rounded-sm font-medium text-zinc-400 underline decoration-slate-700 decoration-2 underline-offset-2 transition duration-100 focus:text-gray-500 focus:ring-slate-500/40 dark:text-zinc-300  dark:hover:decoration-slate-400/30"> 
+                  <a href='https://lichess.org/'target="_blank" className="focusable rounded-sm font-medium text-zinc-400 underline decoration-slate-700 decoration-2 underline-offset-2 transition duration-100 focus:text-gray-500 focus:ring-slate-500/40 dark:text-zinc-300  dark:hover:decoration-slate-400/30"> 
                   lichess.org 
                   </a>
                   - I am planning to extend this project to have a fully working AI opponent.
@@ -206,7 +206,11 @@ export default function Page() {
               </p>
               <p className="flex items-center">
                 <span className="flex-1 text-zinc-500 dark:text-zinc-400">
-                  Created a typing test application inspired by monkeytype.com. The web application (which is currently live- see
+                  Created a typing test application inspired by&nbsp;
+                  <a href='https://monkeytype.com/' target="_blank" className="focusable rounded-sm font-medium text-zinc-400 underline decoration-slate-700 decoration-2 underline-offset-2 transition duration-100 focus:text-gray-500 focus:ring-slate-500/40 dark:text-zinc-300  dark:hover:decoration-slate-400/30"> 
+                  monkeytype.com. 
+                  </a>
+                  &nbsp;The web application (which is currently live- see
                   my github) is aimed towards programmers looking to increase their fluency in languages such as C++, Java, and Python. 
                 </span>
               </p>
