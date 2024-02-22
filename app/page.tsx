@@ -15,7 +15,7 @@ export default function Page() {
           </div>
           <div className="relative mb-8 mr-auto w-[100px] sm:mb-0 sm:w-[200px]">
           <Image
-            src='/profile.jpg' // Assuming the image is in public/
+            src='/images/profile.jpg' // Assuming the image is in public/
             alt='avatar'
             width={200}
             height={200}
@@ -125,7 +125,7 @@ export default function Page() {
               target="_blank"
             >
               <Image
-                src='/chessgame.png'
+                src='/images/chessgame.png'
                 alt='chess project photo'
                 width={300}
                 height={300}
@@ -160,7 +160,7 @@ export default function Page() {
               target="_blank"
             >
               <Image
-                src='/typingtest.png'
+                src='/images/typingtest.png'
                 alt='typing test photo'
                 width={300}
                 height={300}
@@ -194,7 +194,7 @@ export default function Page() {
               target="_blank"
             >
               <Image
-                src='/terminal.png'
+                src='/images/terminal.png'
                 alt='terminal photo'
                 width={300}
                 height={300}
