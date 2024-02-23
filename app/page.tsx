@@ -181,7 +181,7 @@ export default function Page() {
           <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
             <a
               className="link focusable font-medium text-zinc-800 dark:text-white"
-              href="https://github.com/abda-1/bitboard-chess"
+              href="https://github.com/abda-1/abdatype"
               rel="noreferrer"
               target="_blank"
             >
@@ -219,7 +219,7 @@ export default function Page() {
           <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
             <a
               className="link focusable font-medium text-zinc-800 dark:text-white"
-              href="https://github.com/abda-1/bitboard-chess"
+              href="https://github.com/abda-1/Home-Appliance-Organiser"
               rel="noreferrer"
               target="_blank"
             >
