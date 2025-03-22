@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Abdullah Tahir",
-  headline: "an aspiring software and aerospace engineer in love with learning.",
+  headline: "an aspiring software engineer in love with the process of learning.",
   bio: `I'm currently an undergraduate student at The University of Adelaide - studying a double degree in Mechanical Engineering (Aerospace) with Computer Science. During my time as a student, I have always believed in a simply yet powerful philosophy; the best way to grow as an individual is to throw yourself into new experiences. Whether it be through taking upon new and foreign hobbies, such as bouldering or competitive programming, or even trying to figure out how a crater detection algorithm works with zero prior machine learning experience - I wholeheartedly embrace the challenge of pushing past my comfort zone. Each new adventure not only manages to humble me every single time, but also teach me invaluable lessons about perseverance, and the boundless potential of the human spirit!
 
 One of the many things I enjoy is taking the time to break down complex problems- and this is where I discovered my passion for coding. Check out some of the projects I have worked on over the years down below!`,
