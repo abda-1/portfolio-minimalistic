@@ -1,4 +1,3 @@
-import { getBlogPosts } from 'app/db/blog';
 
 export default async function sitemap() {
   // let blogs = getBlogPosts().map((post) => ({
