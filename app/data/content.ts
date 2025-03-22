@@ -38,8 +38,8 @@ export const projects: Project[] = [
     imageUrl: "/images/uofa_insightfactory.png",
     link: "#home",
     period: {
-      start: "Sept 2023",
-      end: "Jan 2024"
+      start: "July 2024",
+      end: "Nov 2024"
     },
     links: [
       {
@@ -156,7 +156,7 @@ export const workExperiences: WorkExperience[] = [
   {
     company: "Inovor Technologies",
     position: "Software Engineering Intern",
-    description: "Developed an operations dashboard to display mission operations and telemetry data for all of Inovor's active satellites. Performed data analysis on the telemetry data and collaborated with the engineering team to provide insights on the performance of the satellites.",
+    description: "Developed an operations dashboard to display mission operations and telemetry data for all of Inovor's active satellites. Performed telemetry data analysis and collaborated with engineers across disciplines to better understand the performance of the satellites. Refined a 3D visualisation tool to display the satellites' current position using live satellite orbital data.",
     period: {
       start: "Dec 2024",
       end: "Feb 2025"
