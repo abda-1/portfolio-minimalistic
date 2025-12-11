@@ -5,6 +5,7 @@ import { GeistMono } from 'geist/font/mono';
 import { Navbar } from './components/nav';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { cn } from './lib/utils';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://abdullahtahir.vercel.app'),
@@ -34,8 +35,6 @@ export const metadata: Metadata = {
   },
 };
 
-const cx = (...classes) => classes.filter(Boolean).join(' ');
-
 export default function RootLayout({
   children,
 }: {
@@ -43,14 +42,15 @@ export default function RootLayout({
 }) {
   return (
     <html
+      suppressHydrationWarning
       lang="en"
-      className={cx(
+      className={cn(
         'text-black bg-white dark:text-white dark:bg-[#111010]',
         GeistSans.variable,
         GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
+      <body suppressHydrationWarning className="antialiased max-w-3xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}

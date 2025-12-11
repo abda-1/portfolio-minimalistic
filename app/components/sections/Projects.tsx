@@ -7,9 +7,9 @@ type ExternalLinkProps = {
 }
 
 const ExternalLink = ({ url, text }: ExternalLinkProps) => (
-  <a 
+  <a
     href={url}
-    target="_blank" 
+    target="_blank"
     className="focusable rounded-sm font-medium text-zinc-400 underline decoration-slate-700 decoration-2 underline-offset-2 transition duration-100 focus:text-gray-500 focus:ring-slate-500/40 dark:text-zinc-300 dark:hover:decoration-slate-400/30"
   >
     {text}
@@ -17,7 +17,7 @@ const ExternalLink = ({ url, text }: ExternalLinkProps) => (
 );
 
 const LanguageBadge = ({ language }: { language: string }) => (
-  <span className="inline-block px-2 py-1 mr-2 mb-2 text-xs font-medium rounded-full bg-zinc-100 text-zinc-600 dark:bg-zinc-700 dark:text-zinc-300">
+  <span className="inline-block px-2.5 py-1 mr-2 mb-2 text-xs font-medium rounded-full border border-zinc-200 dark:border-zinc-600 bg-zinc-50 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300 transition-all duration-200 hover:border-indigo-300 dark:hover:border-indigo-500 hover:bg-indigo-50 dark:hover:bg-indigo-900/30">
     {language}
   </span>
 );
@@ -26,30 +26,31 @@ const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
       <a
-        className="link focusable font-medium text-zinc-800 dark:text-white"
+        className="link focusable font-medium text-zinc-800 dark:text-white group shrink-0"
         href={project.link}
         rel="noreferrer"
         target="_blank"
       >
-        <Image
-          src={project.imageUrl}
-          alt={`${project.title} photo`}
-          width={300}
-          height={300}
-          className="rounded-md"
-        />
+        <div className="relative w-[120px] h-[120px] sm:w-[150px] sm:h-[150px] overflow-hidden rounded-md">
+          <Image
+            src={project.imageUrl}
+            alt={`${project.title} photo`}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
       </a>
       <div className="flex min-w-0 flex-col justify-center">
-        <p className="mb-1 flex items-center">
-          <span className="truncate font-semibold text-zinc-700 dark:text-zinc-100">
+        <div className="mb-1 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
+          <span className="font-semibold text-zinc-700 dark:text-zinc-100">
             {project.title}
           </span>
-          <span className="ml-1.5 inline-block flex-none translate-y-px rounded bg-zinc-100 p-1 text-xs font-medium leading-none text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
+          <span className="inline-block flex-none translate-y-px rounded bg-zinc-100 px-1.5 py-1 text-xs font-medium leading-none text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
             {project.period.start}
             <span className="text-zinc-350 dark:text-zinc-550 mx-0.5">—</span>
             {project.period.end}
           </span>
-        </p>
+        </div>
         <p className="flex items-center">
           <span className="flex-1 text-zinc-500 dark:text-zinc-400">
             {project.links ? (
@@ -57,14 +58,14 @@ const ProjectCard = ({ project }: { project: Project }) => {
                 {project.description.split(project.links[0].text).map((part, index, array) => {
                   // If this is the last part, just return it without a link
                   if (index === array.length - 1) return part;
-                  
-                  // Otherwise, return the part followed by a link
+
+                  // Otherwise, return the part followed by the first link
                   return (
                     <span key={index}>
                       {part}
-                      <ExternalLink 
-                        url={project.links?.[index].url ?? '#'} 
-                        text={project.links?.[index].text ?? ''} 
+                      <ExternalLink
+                        url={project.links![0].url}
+                        text={project.links![0].text}
                       />
                     </span>
                   );
@@ -75,7 +76,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             )}
           </span>
         </p>
-        
+
         {/* Language badges */}
         {project.languages && project.languages.length > 0 && (
           <div className="mt-3">

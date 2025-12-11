@@ -1,11 +1,11 @@
 export const personalInfo = {
   name: "Abdullah Tahir",
-  headline: "an aspiring software engineer in love with the process of learning.",
+  headline: "a software engineer in love with the process of learning.",
   bio: `I'm currently an undergraduate student at The University of Adelaide - studying a double degree in Mechanical Engineering (Aerospace) with Computer Science. During my time as a student, I have always believed in a simply yet powerful philosophy; the best way to grow as an individual is to throw yourself into new experiences. Whether it be through taking upon new and foreign hobbies, such as bouldering or competitive programming, or even trying to figure out how a crater detection algorithm works with zero prior machine learning experience - I wholeheartedly embrace the challenge of pushing past my comfort zone. Each new adventure not only manages to humble me every single time, but also teach me invaluable lessons about perseverance, and the boundless potential of the human spirit!
 
 One of the many things I enjoy is taking the time to break down complex problems- and this is where I discovered my passion for coding. Check out some of the projects I have worked on over the years down below!`,
-  avatarUrl: '/images/memoji.jpg',
-  resumeUrl: '/Abdullah_Tahir_Resume_Software_Mar2025.pdf',
+  avatarUrl: '/images/test.jpg',
+  resumeUrl: '/Abdullah_Tahir_Resume_Software.pdf',
   universityUrl: 'https://www.adelaide.edu.au/',
   socialLinks: {
     linkedin: 'https://www.linkedin.com/in/abdullah-tahir1/',
@@ -32,6 +32,23 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    title: "VHF Radar Data Processing Pipeline",
+    description: "For my final year engineering Honours project, I designed and engineered a scalable data pipeline to process 35TB of raw VHF radar data to support space situational awareness applications. The project serves as a foundation for future research into the use of Koopman Autoencoders for space debris classification.",
+    imageUrl: "/images/rti.png",
+    link: "#home",
+    period: {
+      start: "Mar 2025",
+      end: "Oct 2025"
+    },
+    links: [
+      {
+        url: "https://arxiv.org/pdf/2003.02236",
+        text: "Koopman Autoencoders"
+      }
+    ],
+    languages: ["Python", "HDF5", "Pandas", "Memory Management", "Binary Data Parsing"]
+  },
   {
     title: "Predictive Maintainence Machine Learning Model",
     description: "Developed a machine learning pipeline to predict rail breakages along Australian railways in cooperation with insightfactory.ai for a final year software engineering project. My team won the university competitiion, having our pipeline rank 1st of of 15 teams.",
@@ -85,7 +102,7 @@ export const projects: Project[] = [
   },
   {
     title: "Terminal Based Home Appliance System",
-    description: "Worked alongside other programmers in my first year of computer science to create a terminal based home appliance system to manage appliances within a house. The application uses ncurses to display the information to the user!",
+    description: "Worked alongside other programmers in my first year of computer science to create a terminal based home appliance system to manage appliances within a house. The application uses ncurses to display the information to the user.",
     imageUrl: "/images/terminal.png",
     link: "https://github.com/abda-1/Home-Appliance-Organiser",
     period: {
@@ -114,7 +131,7 @@ export const experiences: Experience[] = [
     imageUrl: "/images/memoji.jpg",
     period: {
       start: "Jan 2022",
-      end: "Today"
+      end: "Nov 2025"
     }
   },
   {
@@ -123,7 +140,7 @@ export const experiences: Experience[] = [
     imageUrl: "/images/cpc.png",
     period: {
       start: "Mar 2023",
-      end: "Today"
+      end: "Sep 2025"
     }
   },
   {
@@ -135,7 +152,7 @@ export const experiences: Experience[] = [
       end: "Aug 2023"
     }
   },
- 
+
 ];
 
 export type WorkExperience = {
@@ -168,4 +185,38 @@ export const workExperiences: WorkExperience[] = [
   },
 ];
 
-export const footerYear = "2025"; 
+export type Education = {
+  institution: string;
+  degree: string;
+  field: string;
+  description?: string;
+  imageUrl?: string;
+  period: {
+    start: string;
+    end: string;
+  };
+  location?: string;
+  link?: string;
+  achievements?: string[];
+  keyDistinctions?: string[];
+};
+
+export const education: Education[] = [
+  {
+    institution: "The University of Adelaide",
+    degree: "Bachelor of Engineering (Honours) (Aerospace) & Bachelor of Mathematical and Computer Science (Computer Science)",
+    field: "",
+    description: "Completed a double degree in Mechanical Engineering (majoring in Aerospace) and Computer Science at the University of Adelaide.",
+    imageUrl: "/images/uofa.png",
+    period: {
+      start: "2021",
+      end: "2025"
+    },
+    location: "Adelaide, Australia",
+    link: "https://www.adelaide.edu.au/",
+    achievements: ["Awarded First Class"],
+
+  },
+];
+
+export const footerYear = "2025"

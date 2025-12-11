@@ -15,13 +15,13 @@ export default function Header() {
             {headline}
           </h2>
         </div>
-        <div className="relative mb-8 mr-auto w-[100px] sm:mb-0 sm:w-[200px]">
+        <div className="relative mb-8 mr-auto h-[100px] w-[100px] shrink-0 sm:mb-0 sm:h-[175px] sm:w-[175px]">
           <Image
             src={avatarUrl}
             alt='avatar'
-            width={200}
-            height={200}
-            className="rounded-full"
+            fill
+            className="rounded-full object-cover"
+            sizes="(max-width: 640px) 200px, 200px"
           />
         </div>
       </div>
@@ -42,18 +42,18 @@ export default function Header() {
                   </a>
                   - studying a double degree in Mechanical Engineering (Aerospace) with Computer Science. During my time as
                   a student, I have always believed in a simply yet powerful philosophy;&nbsp;
-                  
+
                   <span className="focusable rounded-sm font-medium text-zinc-800 underline decoration-rose-700 decoration-2 underline-offset-2 transition duration-100 focus:text-blue-500 focus:ring-sky-500/40 dark:text-white dark:decoration-amber-400  dark:hover:decoration-amber-400/30 dark:focus:text-sky-400 dark:focus:ring-sky-400/40">
-                   the best way to grow as an individual is to throw yourself into new experiences.
+                    the best way to grow as an individual is to throw yourself into new experiences.
                   </span>
-                  
-                  &nbsp;Whether it be through taking upon new and foreign hobbies, such as bouldering or 
+
+                  &nbsp;Whether it be through taking upon new and foreign hobbies, such as bouldering or
                   competitive programming, or even trying to figure out how a crater detection algorithm works with zero prior machine learning experience
-                  - 
+                  -
                   <span className="focusable rounded-sm font-medium text-zinc-800 underline decoration-rose-700 decoration-2 underline-offset-2 transition duration-100 focus:text-blue-500 focus:ring-sky-500/40 dark:text-white dark:decoration-rose-400  dark:hover:decoration-rose-400/30 dark:focus:text-sky-400 dark:focus:ring-sky-400/40">
-                  I wholeheartedly embrace the challenge of pushing past my comfort zone. 
+                    I wholeheartedly embrace the challenge of pushing past my comfort zone.
                   </span>
-                  &nbsp;Each new adventure not only manages to humble me every single time, but also teach me invaluable lessons about perseverance, 
+                  &nbsp;Each new adventure not only manages to humble me every single time, but also teach me invaluable lessons about perseverance,
                   and the boundless potential of the human spirit!
                 </>
               ) : (

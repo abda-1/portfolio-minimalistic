@@ -3,10 +3,10 @@ import { Experience, experiences } from '../../data/content';
 
 const ExperienceCard = ({ experience }: { experience: Experience }) => {
   return (
-    <li className="mb-8 pb-8 last:mb-0 last:pb-0">
+    <li className="group mb-8 pb-8 last:mb-0 last:pb-0 rounded-xl border border-zinc-200/50 dark:border-zinc-800/50 p-4 transition-all duration-300 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg hover:shadow-zinc-200/50 dark:hover:shadow-zinc-900/50 hover:-translate-y-0.5">
       <div className="flex flex-col md:flex-row md:items-start gap-4">
         {experience.imageUrl && (
-          <div className="flex-shrink-0 w-20 h-20 relative rounded-md overflow-hidden">
+          <div className="shrink-0 w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] relative rounded-md overflow-hidden">
             <Image
               src={experience.imageUrl}
               alt={`${experience.title} image`}
@@ -35,7 +35,7 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => {
               {experience.period.start} — {experience.period.end}
             </div>
           </div>
-          
+
           <p className="mt-2 text-zinc-600 dark:text-zinc-300">
             {experience.description}
           </p>
