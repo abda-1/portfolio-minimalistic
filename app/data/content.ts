@@ -5,7 +5,7 @@ export const personalInfo = {
 
 One of the many things I enjoy is taking the time to break down complex problems- and this is where I discovered my passion for coding. Check out some of the projects I have worked on over the years down below!`,
   avatarUrl: '/images/test.png',
-  resumeUrl: '/Abdullah_Tahir_Resume_Software.pdf',
+  resumeUrl: '/Abdullah_Tahir_Resume.pdf',
   universityUrl: 'https://www.adelaide.edu.au/',
   socialLinks: {
     linkedin: 'https://www.linkedin.com/in/abdullah-tahir1/',

@@ -12,6 +12,16 @@
   color: #fefefe;
 }
 
+/* Global text color */
+body {
+  color: #18181b;
+  /* zinc-900 */
+}
+
+.dark body {
+  color: #ffffff;
+}
+
 :root {
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
