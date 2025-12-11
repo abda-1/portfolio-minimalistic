@@ -51,7 +51,7 @@ export default function Experiences() {
     <div className="content mt-12 sm:mt-24">
       <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Experiences & Activities</h2>
       <p className="max-w-[100ch] mb-8 leading-relaxed text-zinc-500 dark:text-slate-300">
-        Other activities and experiences that have shaped my journey!
+
       </p>
 
       <ul className="space-y-4">

@@ -214,7 +214,7 @@ export const education: Education[] = [
     },
     location: "Adelaide, Australia",
     link: "https://www.adelaide.edu.au/",
-    achievements: ["Awarded First Class"],
+    achievements: ["Awarded First Class", "GPA 6.1/7.0"],
 
   },
 ];
