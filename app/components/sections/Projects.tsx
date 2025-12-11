@@ -24,7 +24,7 @@ const LanguageBadge = ({ language }: { language: string }) => (
 
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
-    <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
+    <li className="group dark:text-zinc-350 my-5 flex flex-col md:flex-row md:items-start gap-4 text-zinc-500 rounded-xl border border-zinc-200/50 dark:border-zinc-800/50 p-4 transition-all duration-300 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg hover:shadow-zinc-200/50 dark:hover:shadow-zinc-900/50 hover:-translate-y-0.5">
       <a
         className="link focusable font-medium text-zinc-800 dark:text-white group shrink-0"
         href={project.link}

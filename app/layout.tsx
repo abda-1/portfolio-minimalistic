@@ -6,6 +6,7 @@ import { Navbar } from './components/nav';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { cn } from './lib/utils';
+import { ThemeProvider } from './components/ThemeProvider';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://abdullahtahir.vercel.app'),
@@ -51,12 +52,14 @@ export default function RootLayout({
       )}
     >
       <body suppressHydrationWarning className="antialiased max-w-3xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Navbar />
-          {children}
-          <Analytics />
-          <SpeedInsights />
-        </main>
+        <ThemeProvider>
+          <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+            <Navbar />
+            {children}
+            <Analytics />
+            <SpeedInsights />
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );

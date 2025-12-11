@@ -6,11 +6,12 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => {
     <li className="group mb-8 pb-8 last:mb-0 last:pb-0 rounded-xl border border-zinc-200/50 dark:border-zinc-800/50 p-4 transition-all duration-300 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg hover:shadow-zinc-200/50 dark:hover:shadow-zinc-900/50 hover:-translate-y-0.5">
       <div className="flex flex-col md:flex-row md:items-start gap-4">
         {experience.imageUrl && (
-          <div className="shrink-0 w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] relative rounded-md overflow-hidden">
+          <div className="shrink-0 w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] relative rounded-md overflow-hidden">
             <Image
               src={experience.imageUrl}
               alt={`${experience.title} image`}
               fill
+              sizes="(max-width: 640px) 80px, 120px"
               className="object-cover"
             />
           </div>
